@@ -9,7 +9,7 @@
 - Генерация DOCX и PDF коммерческих предложений
 - База клиентов и история КП
 - Редактор брендовых профилей и синонимов
-- Удобный современный интерфейс
+- Удобный современный интерфейс на CustomTkinter
 
 ## Как запустить
 
@@ -18,17 +18,3 @@
    ```bash
    python -m venv venv
    venv\Scripts\activate
-Структура проекта
-
-main.py — точка входа
-gui.py — основной интерфейс
-generators/ — генерация документов
-importers/ — импорт данных
-services/ — бизнес-логика
-
-Технологии
-
-Python
-CustomTkinter
-python-docx + reportlab
-pandas + pdfplumber
