@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "created_at": "09.06.2026 13:07",
+    "created_timestamp": "2026-06-09T13:07:42.091860",
+    "client": {
+      "name": "КЛИМАТПРОФ",
+      "contact_person": "Сидоров Иван",
+      "phone": "+7 (812) 320-08-82",
+      "email": "info@klimatprof.online",
+      "object": "Выборгский БЦ"
+    },
+    "variants_count": 1,
+    "total_amount": 69600,
+    "filename": "C:/Users/Febest/Desktop/ИГОРЕК Арена/test.pdf",
+    "variants": [
+      {
+        "model_key": "Сплит-система LS-HE07KRE2A/LU-HE07KRE2A",
+        "quantity": 1,
+        "installation_price": 26000,
+        "approval_price": 5000
+      }
+    ]
+  }
+]

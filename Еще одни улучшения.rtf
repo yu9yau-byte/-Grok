@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1250\deff0\nouicompat\deflang9242{\fonttbl{\f0\fnil\fcharset1 Segoe UI Symbol;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset204 Calibri;}{\f3\fnil\fcharset1 Segoe UI Symbol;}{\f4\fnil Calibri;}{\f5\fnil\fcharset1 Segoe UI Emoji;}{\f6\fnil\fcharset134 SimSun;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang1049\u-10179?\u-8908?\f1\lang1033  \f2\lang1049\'ca\'d0\'c8\'d2\'c8\'d7\'c5\'d1\'ca\'c8\'c5\f1\lang1033  \f2\lang1049\'cf\'d0\'ce\'c1\'cb\'c5\'cc\'db\f1\lang1033  (\f2\lang1049\'ec\'ee\'e3\'f3\'f2\f1\lang1033  \f2\lang1049\'f1\'eb\'ee\'ec\'e0\'f2\'fc\f1\lang1033  \f2\lang1049\'ef\'f0\'ee\'e3\'f0\'e0\'ec\'ec\'f3\f1\lang1033 )\par
+1. \f2\lang1049\'cc\'ed\'ee\'e3\'ee\'ea\'f0\'e0\'f2\'ed\'e0\'ff\f1\lang1033  \f2\lang1049\'e7\'e0\'e3\'f0\'f3\'e7\'ea\'e0\f1\lang1033  \f2\lang1049\'f4\'e0\'e9\'eb\'ee\'e2\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'f6\'e8\'ea\'eb\'e5\f1\lang1033  (\par
+history.py\par
+, \f2\lang1049\'f1\'f2\'f0\'ee\'ea\'e8\f1\lang1033  51-53)\par
+Python\par
+\par
+for var in variants:\par
+    ...\par
+    models = config.load_models()  # \f3\u10060?\f1  \f2\lang1049\'c7\'e0\'e3\'f0\'f3\'e6\'e0\'e5\'f2\'f1\'ff\f1\lang1033  \f2\lang1049\'c4\'cb\'df\f1\lang1033  \f2\lang1049\'ca\'c0\'c6\'c4\'ce\'c3\'ce\f1\lang1033  \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'e0\f1\lang1033 !\par
+    model = models.get(model_key, \{\})\par
+\f2\lang1049\'c5\'f1\'eb\'e8\f1\lang1033  10 \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2\f1\lang1033  \f4\emdash\f1  10 \f2\lang1049\'f0\'e0\'e7\f1\lang1033  \f2\lang1049\'f7\'e8\'f2\'e0\'e5\'f2\'f1\'ff\f1\lang1033  \f2\lang1049\'f4\'e0\'e9\'eb\f1\lang1033  models.json. \f2\lang1049\'dd\'f2\'ee\f1\lang1033  \f2\lang1049\'e8\f1\lang1033  \f2\lang1049\'ec\'e5\'e4\'eb\'e5\'ed\'ed\'ee\f1\lang1033 , \f2\lang1049\'e8\f1\lang1033  \f2\lang1049\'ed\'e0\'e3\'f0\'f3\'e7\'ea\'e0\f1\lang1033  \f2\lang1049\'ed\'e0\f1\lang1033  \f2\lang1049\'e4\'e8\'f1\'ea\f1\lang1033 .\par
+\par
+2. \f2\lang1049\'d2\'ee\'f2\f1\lang1033  \f2\lang1049\'e6\'e5\f1\lang1033  \f2\lang1049\'e1\'e0\'e3\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \par
+generators.py\par
+ (\f2\lang1049\'f1\'f2\'f0\'ee\'ea\'e8\f1\lang1033  282-283, 489)\par
+Python\par
+\par
+for idx, var in enumerate(variants, 1):\par
+    ...\par
+    models = config.load_models()  # \f3\u10060?\f1  \f2\lang1049\'ce\'ef\'ff\'f2\'fc\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'f6\'e8\'ea\'eb\'e5\f1\lang1033 !\par
+\f2\lang1049\'c4\'ee\'eb\'e6\'ed\'ee\f1\lang1033  \f2\lang1049\'e1\'fb\'f2\'fc\f1\lang1033 : \f2\lang1049\'e7\'e0\'e3\'f0\'f3\'e7\'e8\'f2\'fc\f1\lang1033  1 \f2\lang1049\'f0\'e0\'e7\f1\lang1033  \f2\lang1049\'ef\'e5\'f0\'e5\'e4\f1\lang1033  \f2\lang1049\'f6\'e8\'ea\'eb\'ee\'ec\f1\lang1033 .\par
+\par
+3. \f2\lang1049\'cf\'f0\'ee\'ef\'f3\'f1\'ea\f1\lang1033  \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'e0\f1\lang1033  \f2\lang1049\'e1\'e5\'e7\f1\lang1033  \f2\lang1049\'ee\'f8\'e8\'e1\'ea\'e8\f1\lang1033  (\par
+generators.py\par
+, \f2\lang1049\'f1\'f2\'f0\'ee\'ea\'e0\f1\lang1033  287-288)\par
+Python\par
+\par
+if not model:\par
+    continue  # \f3\u10060?\f1  \f2\lang1049\'cf\'f0\'ee\'f1\'f2\'ee\f1\lang1033  \f2\lang1049\'ef\'f0\'ee\'ef\'f3\'f1\'ea\'e0\'e5\'f2\f1\lang1033 ! \f2\lang1049\'cf\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc\f1\lang1033  \f2\lang1049\'ed\'e5\f1\lang1033  \f2\lang1049\'f3\'e7\'ed\'e0\'e5\'f2\f1\lang1033 , \f2\lang1049\'f7\'f2\'ee\f1\lang1033  \f2\lang1049\'ca\'cf\f1\lang1033  \f2\lang1049\'ed\'e5\'ef\'ee\'eb\'ed\'ee\'e5\f1\lang1033\par
+\f2\lang1049\'c4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\f1\lang1033  \f2\lang1049\'f1\'e3\'e5\'ed\'e5\'f0\'e8\'f0\'f3\'e5\'f2\'f1\'ff\f1\lang1033 , \f2\lang1049\'ed\'ee\f1\lang1033  \f2\lang1049\'e1\'e5\'e7\f1\lang1033  \f2\lang1049\'f7\'e0\'f1\'f2\'e8\f1\lang1033  \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2\f1\lang1033 . \f2\lang1049\'cf\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'e5\'eb\'fc\f1\lang1033  \f2\lang1049\'ed\'e5\f1\lang1033  \f2\lang1049\'ef\'ee\'eb\'f3\'f7\'e8\'f2\f1\lang1033  \f2\lang1049\'ef\'f0\'e5\'e4\'f3\'ef\'f0\'e5\'e6\'e4\'e5\'ed\'e8\'ff\f1\lang1033 .\par
+\par
+\f5\u-10179?\u-8224?\f1  \f2\lang1049\'d3\'c7\'ca\'c8\'c5\f1\lang1033  \f2\lang1049\'cc\'c5\'d1\'d2\'c0\f1\lang1033  (\f2\lang1049\'f3\'e7\'ea\'e8\'e5\f1\lang1033  \f2\lang1049\'ec\'e5\'f1\'f2\'e0\f1\lang1033  \f2\lang1049\'ef\'f0\'ee\'e8\'e7\'e2\'ee\'e4\'e8\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'e8\f1\lang1033 )\par
+4. \f2\lang1049\'d4\'e8\'eb\'fc\'f2\'f0\'e0\'f6\'e8\'ff\f1\lang1033  \f2\lang1049\'e1\'e5\'e7\f1\lang1033  \f2\lang1049\'ea\'fd\'f8\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff\f1\lang1033  (\par
+history.py\par
+)\par
+Python\par
+\par
+def filter_proposals(filters=None):\par
+    history = load_history()  # \f3\u10060?\f1  \f2\lang1049\'d4\'e0\'e9\'eb\f1\lang1033  \f2\lang1049\'f7\'e8\'f2\'e0\'e5\'f2\'f1\'ff\f1\lang1033  \f2\lang1049\'ef\'f0\'e8\f1\lang1033  \f2\lang1049\'ca\'c0\'c6\'c4\'ce\'cc\f1\lang1033  \f2\lang1049\'e2\'fb\'e7\'ee\'e2\'e5\f1\lang1033\par
+\f2\lang1049\'cf\'f0\'e8\f1\lang1033  \f2\lang1049\'ee\'f2\'ea\'f0\'fb\'f2\'e8\'e8\f1\lang1033  \f2\lang1049\'e8\'f1\'f2\'ee\'f0\'e8\'e8\f1\lang1033 , \f2\lang1049\'ef\'f0\'e8\'ec\'e5\'ed\'e5\'ed\'e8\'e8\f1\lang1033  \f2\lang1049\'f4\'e8\'eb\'fc\'f2\'f0\'e0\f1\lang1033 , \f2\lang1049\'f1\'e1\'f0\'ee\'f1\'e5\f1\lang1033  \f4\emdash\f1  \f2\lang1049\'ea\'e0\'e6\'e4\'fb\'e9\f1\lang1033  \f2\lang1049\'f0\'e0\'e7\f1\lang1033  \f2\lang1049\'e7\'e0\'ed\'ee\'e2\'ee\f1\lang1033 . \f2\lang1049\'c0\f1\lang1033  history \f2\lang1049\'ec\'ee\'e6\'e5\'f2\f1\lang1033  \f2\lang1049\'f0\'e0\'f1\'f2\'e8\f1\lang1033 .\par
+\par
+5. \f2\lang1049\'c0\'e2\'f2\'ee\'e4\'ee\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5\f1\lang1033  \f2\lang1049\'ef\'f0\'e8\f1\lang1033  \f2\lang1049\'ea\'e0\'e6\'e4\'ee\'ec\f1\lang1033  \f2\lang1049\'ed\'e0\'e6\'e0\'f2\'e8\'e8\f1\lang1033  (\par
+gui.py\par
+, AutocompleteEntry)\par
+Python\par
+\par
+def _on_text_change(self, *args):\par
+    all_values = self.values_getter()  # \f3\u10060?\f1  \f2\lang1049\'c2\'fb\'e7\'fb\'e2\'e0\'e5\'f2\f1\lang1033  load_clients() \f2\lang1049\'ef\'f0\'e8\f1\lang1033  \f2\lang1049\'ca\'c0\'c6\'c4\'ce\'c9\f1\lang1033  \f2\lang1049\'e1\'f3\'ea\'e2\'e5\f1\lang1033\par
+    self.filtered_values = [v for v in all_values if text.lower() in v.lower()][:]\par
+\f2\lang1049\'cf\'f0\'e8\f1\lang1033  \f2\lang1049\'e2\'e2\'ee\'e4\'e5\f1\lang1033  "\f2\lang1049\'ce\'ce\'ce\f1\lang1033 " \f4\emdash\f1  3 \f2\lang1049\'f0\'e0\'e7\'e0\f1\lang1033  \f2\lang1049\'ef\'e5\'f0\'e5\'f7\'e8\'f2\'fb\'e2\'e0\'e5\'f2\'f1\'ff\f1\lang1033  clients.json. \f2\lang1049\'cd\'e5\'f2\f1\lang1033  \f2\lang1049\'ea\'fd\'f8\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'ff\f1\lang1033  \f2\lang1049\'f1\'ef\'e8\'f1\'ea\'e0\f1\lang1033  \f2\lang1049\'ec\'e5\'e6\'e4\'f3\f1\lang1033  \f2\lang1049\'e2\'fb\'e7\'ee\'e2\'e0\'ec\'e8\f1\lang1033 .\par
+\par
+6. update_clients_combo_values \f4\emdash\f1  \f2\lang1049\'ef\'f3\'f1\'f2\'e0\'ff\f1\lang1033  \f2\lang1049\'e7\'e0\'e3\'eb\'f3\'f8\'ea\'e0\f1\lang1033  (\par
+gui.py\par
+)\par
+Python\par
+\par
+def update_clients_combo_values(self):\par
+    pass  # \f3\u10060?\f1  \f2\lang1049\'cd\'e8\'f7\'e5\'e3\'ee\f1\lang1033  \f2\lang1049\'ed\'e5\f1\lang1033  \f2\lang1049\'e4\'e5\'eb\'e0\'e5\'f2\f1\lang1033 !\par
+\f2\lang1049\'ca\'ee\'ec\'ec\'e5\'ed\'f2\'e0\'f0\'e8\'e9\f1\lang1033  \f2\lang1049\'e3\'ee\'e2\'ee\'f0\'e8\'f2\f1\lang1033  "\f2\lang1049\'ce\'e1\'ed\'ee\'e2\'eb\'ff\'e5\'f2\f1\lang1033  \f2\lang1049\'e0\'e2\'f2\'ee\'e4\'ee\'ef\'ee\'eb\'ed\'e5\'ed\'e8\'e5\f1\lang1033  \f2\lang1049\'ea\'eb\'e8\'e5\'ed\'f2\'ee\'e2\f1\lang1033 ", \f2\lang1049\'ed\'ee\f1\lang1033  \f2\lang1049\'f4\'f3\'ed\'ea\'f6\'e8\'ff\f1\lang1033  \f2\lang1049\'ef\'f3\'f1\'f2\'e0\'ff\f1\lang1033 .\par
+\par
+\f5\u-10179?\u-8223?\f1  \f2\lang1049\'cb\'ce\'c3\'c8\'d7\'c5\'d1\'ca\'c8\'c5\f1\lang1033  \f2\lang1049\'ce\'d8\'c8\'c1\'ca\'c8\f1\lang1033\par
+7. \f2\lang1049\'c4\'e2\'ee\'e9\'ed\'ee\'e9\f1\lang1033  \f2\lang1049\'f4\'ee\'f0\'ec\'e0\'f2\f1\lang1033  \f2\lang1049\'e4\'e0\'f2\'fb\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'e8\'f1\'f2\'ee\'f0\'e8\'e8\f1\lang1033  (\par
+history.py\par
+)\par
+Python\par
+\par
+# created_at \f2\lang1049\'f5\'f0\'e0\'ed\'e8\'f2\'f1\'ff\f1\lang1033  \f2\lang1049\'ea\'e0\'ea\f1\lang1033  "\f2\lang1049\'c4\'c4\f1\lang1033 .\f2\lang1049\'cc\'cc\f1\lang1033 .\f2\lang1049\'c3\'c3\'c3\'c3\f1\lang1033  \f2\lang1049\'d7\'d7\f1\lang1033 :\f2\lang1049\'cc\'cc\f1\lang1033 " (\f2\lang1049\'f1\'f2\'f0\'ee\'ea\'e0\f1\lang1033 )\par
+# created_timestamp \f2\lang1049\'f5\'f0\'e0\'ed\'e8\'f2\'f1\'ff\f1\lang1033  \f2\lang1049\'ea\'e0\'ea\f1\lang1033  ISO \f2\lang1049\'f4\'ee\'f0\'ec\'e0\'f2\f1\lang1033  \f2\lang1049\'e4\'eb\'ff\f1\lang1033  \f2\lang1049\'ef\'e0\'f0\'f1\'e8\'ed\'e3\'e0\f1\lang1033\par
+\f2\lang1049\'d4\'e8\'eb\'fc\'f2\'f0\'e0\'f6\'e8\'ff\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  filter_proposals \f2\lang1049\'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2\f1\lang1033  \f2\lang1049\'f2\'ee\'eb\'fc\'ea\'ee\f1\lang1033  \f2\lang1049\'f1\f1\lang1033  created_at[:10]:\par
+\par
+Python\par
+\par
+item_date = datetime.strptime(item.get('created_at', '')[:10], '%d.%m.%Y')\par
+\f2\lang1049\'c0\'ed\'e0\'eb\'e8\'f2\'e8\'ea\'e0\f1\lang1033  \f2\lang1049\'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'e5\'f2\f1\lang1033  created_timestamp. \f2\lang1049\'dd\'f2\'ee\f1\lang1033  \f2\lang1049\'e4\'f3\'e1\'eb\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5\f1\lang1033  \f2\lang1049\'e8\f1\lang1033  \f2\lang1049\'ed\'e5\'ef\'ee\'f1\'eb\'e5\'e4\'ee\'e2\'e0\'f2\'e5\'eb\'fc\'ed\'ee\'f1\'f2\'fc\f1\lang1033 .\par
+\par
+8. \f2\lang1049\'d1\'ee\'f5\'f0\'e0\'ed\'e5\'ed\'e8\'e5\f1\lang1033  \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'e8\'f1\'f2\'ee\'f0\'e8\'fe\f1\lang1033  (\par
+history.py\par
+)\par
+Python\par
+\par
+'variants': variants  # \f2\lang1049\'cf\'ee\'eb\'ed\'fb\'e5\f1\lang1033  \f2\lang1049\'e4\'e0\'ed\'ed\'fb\'e5\f1\lang1033  \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2\f1\lang1033  \f2\lang1049\'e4\'eb\'ff\f1\lang1033  \f2\lang1049\'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'eb\'e5\'ed\'e8\'ff\f1\lang1033\par
+\f2\lang1049\'d5\'f0\'e0\'ed\'e8\'f2\'f1\'ff\f1\lang1033  \f2\lang1049\'ef\'ee\'eb\'ed\'e0\'ff\f1\lang1033  \f2\lang1049\'ea\'ee\'ef\'e8\'ff\f1\lang1033  variants \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'ea\'e0\'e6\'e4\'ee\'e9\f1\lang1033  \f2\lang1049\'e7\'e0\'ef\'e8\'f1\'e8\f1\lang1033  \f2\lang1049\'e8\'f1\'f2\'ee\'f0\'e8\'e8\f1\lang1033 . \f2\lang1049\'cf\'f0\'e8\f1\lang1033  1000 \f2\lang1049\'ca\'cf\f1\lang1033  \f2\lang1049\'ef\'ee\f1\lang1033  10 \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2\f1\lang1033  \f4\emdash\f1  \f2\lang1049\'fd\'f2\'ee\f1\lang1033  \f2\lang1049\'ec\'ed\'ee\'e3\'ee\f1\lang1033  \f2\lang1049\'eb\'e8\'f8\'ed\'e8\'f5\f1\lang1033  \f2\lang1049\'e4\'e0\'ed\'ed\'fb\'f5\f1\lang1033 , \f2\lang1049\'ef\'eb\'fe\'f1\f1\lang1033  \f2\lang1049\'ef\'f0\'ee\'e1\'eb\'e5\'ec\'e0\f1\lang1033 : \f2\lang1049\'e5\'f1\'eb\'e8\f1\lang1033  \f2\lang1049\'ec\'ee\'e4\'e5\'eb\'fc\f1\lang1033  \f2\lang1049\'f3\'e4\'e0\'eb\'e8\'eb\'e8\f1\lang1033  \f2\lang1049\'e8\'e7\f1\lang1033  \f2\lang1049\'e1\'e0\'e7\'fb\f1\lang1033 , \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\f1\lang1033  \f2\lang1049\'e2\'f1\'b8\f1\lang1033  \f2\lang1049\'f0\'e0\'e2\'ed\'ee\f1\lang1033  \f2\lang1049\'e2\'ee\'f1\'f1\'f2\'e0\'ed\'ee\'e2\'e8\'f2\'f1\'ff\f1\lang1033 , \f2\lang1049\'ed\'ee\f1\lang1033  \f2\lang1049\'e1\'e5\'e7\f1\lang1033  \f2\lang1049\'f6\'e5\'ed\'fb\f1\lang1033 .\par
+\par
+\f0\u-10179?\u-8907?\f1  \f2\lang1049\'cf\'d0\'ce\'c1\'cb\'c5\'cc\'db\f1\lang1033  \f2\lang1049\'ca\'ce\'c4\'c0\f1\lang1033  \f2\lang1049\'c8\f1\lang1033  \f2\lang1049\'d1\'ce\'cf\'d0\'ce\'c2\'ce\'c6\'c4\'c5\'cd\'c8\'df\f1\lang1033\par
+9. gui.py \f4\emdash\f1  1100+ \f2\lang1049\'f1\'f2\'f0\'ee\'ea\f1\lang1033 , \f2\lang1049\'ed\'e0\'f0\'f3\'f8\'e5\'ed\'e8\'e5\f1\lang1033  SRP\par
+\f2\lang1049\'ce\'e4\'e8\'ed\f1\lang1033  \f2\lang1049\'f4\'e0\'e9\'eb\f1\lang1033  \f2\lang1049\'e4\'e5\'eb\'e0\'e5\'f2\f1\lang1033  \f2\lang1049\'e2\'f1\'b8\f1\lang1033 : UI, \f2\lang1049\'e1\'e8\'e7\'ed\'e5\'f1\f1\lang1033 -\f2\lang1049\'eb\'ee\'e3\'e8\'ea\'e0\f1\lang1033 , \f2\lang1049\'ee\'e1\'f0\'e0\'e1\'ee\'f2\'ea\'e0\f1\lang1033  \f2\lang1049\'f1\'ee\'e1\'fb\'f2\'e8\'e9\f1\lang1033 , \f2\lang1049\'e3\'e5\'ed\'e5\'f0\'e0\'f6\'e8\'ff\f1\lang1033  \f2\lang1049\'e4\'ee\'ea\'f3\'ec\'e5\'ed\'f2\'ee\'e2\f1\lang1033 . \f2\lang1049\'cd\'f3\'e6\'ed\'ee\f1\lang1033  \f2\lang1049\'f0\'e0\'e7\'e1\'e8\'f2\'fc\f1\lang1033  \f2\lang1049\'ed\'e0\f1\lang1033 :\par
+\par
+views/ \f4\emdash\f1  \f2\lang1049\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\f1\lang1033\par
+services/ \f4\emdash\f1  \f2\lang1049\'eb\'ee\'e3\'e8\'ea\'e0\f1\lang1033\par
+models/ \f4\emdash\f1  \f2\lang1049\'e4\'e0\'ed\'ed\'fb\'e5\f1\lang1033\par
+10. \f2\lang1049\'ca\'ee\'ef\'e8\'ef\'e0\'f1\'f2\'e0\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'e3\'e5\'ed\'e5\'f0\'e0\'f2\'ee\'f0\'e0\'f5\f1\lang1033  (\par
+generators.py\par
+)\par
+generate_docx \f2\lang1049\'e8\f1\lang1033  generate_pdf \f4\emdash\f1  ~600 \f2\lang1049\'f1\'f2\'f0\'ee\'ea\f1\lang1033  \f2\lang1049\'e4\'f3\'e1\'eb\'e8\'f0\'f3\'fe\'f9\'e5\'e3\'ee\'f1\'ff\f1\lang1033  \f2\lang1049\'ea\'ee\'e4\'e0\f1\lang1033 :\par
+\par
+\f2\lang1049\'d2\'e0\'e1\'eb\'e8\'f6\'e0\f1\lang1033  \f2\lang1049\'f8\'e0\'ef\'ea\'e8\f1\lang1033  \f2\lang1049\'e8\'e4\'e5\'ed\'f2\'e8\'f7\'ed\'e0\f1\lang1033\par
+\f2\lang1049\'d0\'e5\'ea\'e2\'e8\'e7\'e8\'f2\'fb\f1\lang1033  \f2\lang1049\'e8\'e4\'e5\'ed\'f2\'e8\'f7\'ed\'fb\f1\lang1033\par
+\f2\lang1049\'d6\'e8\'ea\'eb\f1\lang1033  \f2\lang1049\'e2\'e0\'f0\'e8\'e0\'ed\'f2\'ee\'e2\f1\lang1033  \f2\lang1049\'ef\'ee\'f7\'f2\'e8\f1\lang1033  \f2\lang1049\'e8\'e4\'e5\'ed\'f2\'e8\'f7\'e5\'ed\f1\lang1033\par
+\f2\lang1049\'cd\'f3\'e6\'ed\'e0\f1\lang1033  \f2\lang1049\'ee\'e1\'f9\'e0\'ff\f1\lang1033  \f2\lang1049\'f4\'f3\'ed\'ea\'f6\'e8\'ff\f1\lang1033  \f2\lang1049\'e3\'e5\'ed\'e5\'f0\'e0\'f6\'e8\'e8\f1\lang1033  \f2\lang1049\'e4\'e0\'ed\'ed\'fb\'f5\f1\lang1033  \f2\lang1049\'e8\f1\lang1033  \f2\lang1049\'ee\'f2\'e4\'e5\'eb\'fc\'ed\'fb\'e5\f1\lang1033  render-\f2\lang1049\'f4\'f3\'ed\'ea\'f6\'e8\'e8\f1\lang1033 .\par
+\par
+11. except Exception: continue \f4\emdash\f1  \f2\lang1049\'f1\'ea\'f0\'fb\'f2\'e8\'e5\f1\lang1033  \f2\lang1049\'ee\'f8\'e8\'e1\'ee\'ea\f1\lang1033  (\par
+importers.py\par
+)\par
+Python\par
+\par
+for _, row in df.iterrows():\par
+    try:\par
+        ...\par
+    except Exception:\par
+        continue  # \f3\u10060?\f1  \f2\lang1049\'c0\'e1\'f1\'ee\'eb\'fe\'f2\'ed\'ee\f1\lang1033  \f2\lang1049\'ed\'e5\'ef\'f0\'ee\'e7\'f0\'e0\'f7\'ed\'ee\f1\lang1033  \f2\lang1049\'f7\'f2\'ee\f1\lang1033  \f2\lang1049\'ef\'ee\'f8\'eb\'ee\f1\lang1033  \f2\lang1049\'ed\'e5\f1\lang1033  \f2\lang1049\'f2\'e0\'ea\f1\lang1033\par
+12. \f2\lang1049\'d1\'ec\'e5\'f8\'e0\'ed\'ed\'fb\'e5\f1\lang1033  \f2\lang1049\'e2\'e8\'e4\'e6\'e5\'f2\'fb\f1\lang1033  tk \f2\lang1049\'e8\f1\lang1033  CTk (\par
+gui.py\par
+, \par
+client_editor.py\par
+)\par
+Python\par
+\par
+import customtkinter as ctk\par
+...\par
+self.address_text = tk.Text(...)  # tk \f2\lang1049\'e2\'e8\'e4\'e6\'e5\'f2\f1\lang1033  \f2\lang1049\'e2\'ed\'f3\'f2\'f0\'e8\f1\lang1033  CTk \f2\lang1049\'e8\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0\f1\lang1033\par
+\f2\lang1049\'dd\'f2\'ee\f1\lang1033  \f2\lang1049\'ef\'f0\'e8\'f7\'e8\'ed\'e0\f1\lang1033  \f2\lang1049\'ef\'f0\'ee\'e1\'eb\'e5\'ec\f1\lang1033  \f2\lang1049\'f1\f1\lang1033  \f2\lang1049\'ec\'e5\'f0\'f6\'e0\'ed\'e8\'e5\'ec\f1\lang1033  \f4\emdash\f1  \f2\lang1049\'f0\'e0\'e7\'ed\'fb\'e5\f1\lang1033  \f2\lang1049\'f1\'e8\'f1\'f2\'e5\'ec\'fb\f1\lang1033  \f2\lang1049\'f0\'e5\'ed\'e4\'e5\'f0\'e8\'ed\'e3\'e0\f1\lang1033 .\par
+\par
+\f5\u-10179?\u-8222?\f1  \f2\lang1049\'d7\'d2\'ce\f1\lang1033  \f2\lang1049\'cd\'d3\'c6\'cd\'ce\f1\lang1033  \f2\lang1049\'c8\'d1\'cf\'d0\'c0\'c2\'c8\'d2\'dc\f1\lang1033  (\f2\lang1049\'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\f1\lang1033 )\par
+\f2\lang1049\'c2\'fb\'f1\'f8\'e8\'e9\f1\lang1033  \f2\lang1049\'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\f1\lang1033 :\par
+\f2\lang1049\'c8\'f1\'ef\'f0\'e0\'e2\'e8\'f2\'fc\f1\lang1033  add_proposal \f2\lang1049\'e2\f1\lang1033  history.py \f4\emdash\f1  \f2\lang1049\'e2\'fb\'ed\'e5\'f1\'f2\'e8\f1\lang1033  config.load_models() \f2\lang1049\'e8\'e7\f1\lang1033  \f2\lang1049\'f6\'e8\'ea\'eb\'e0\f1\lang1033\par
+\f2\lang1049\'c8\'f1\'ef\'f0\'e0\'e2\'e8\'f2\'fc\f1\lang1033  \f2\lang1049\'e3\'e5\'ed\'e5\'f0\'e0\'f2\'ee\'f0\'fb\f1\lang1033  \f4\emdash\f1  load_models \f2\lang1049\'ef\'e5\'f0\'e5\'e4\f1\lang1033  \f2\lang1049\'f6\'e8\'ea\'eb\'ee\'ec\f1\lang1033 , \f2\lang1049\'e2\'e0\'eb\'e8\'e4\'e0\'f6\'e8\'ff\f1\lang1033  \f2\lang1049\'ec\'ee\'e4\'e5\'eb\'e8\f1\lang1033\par
+\f2\lang1049\'c4\'ee\'e1\'e0\'e2\'e8\'f2\'fc\f1\lang1033  \f2\lang1049\'ea\'fd\'f8\'e8\'f0\'ee\'e2\'e0\'ed\'e8\'e5\f1\lang1033  \f2\lang1049\'ea\'eb\'e8\'e5\'ed\'f2\'ee\'e2\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  AutocompleteEntry\par
+\f2\lang1049\'d1\'f0\'e5\'e4\'ed\'e8\'e9\f1\lang1033  \f2\lang1049\'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\f1\lang1033 :\par
+\f2\lang1049\'d3\'e4\'e0\'eb\'e8\'f2\'fc\f1\lang1033  \f2\lang1049\'ef\'f3\'f1\'f2\'f3\'fe\f1\lang1033  update_clients_combo_values \f2\lang1049\'e8\'eb\'e8\f1\lang1033  \f2\lang1049\'f0\'e5\'e0\'eb\'e8\'e7\'ee\'e2\'e0\'f2\'fc\f1\lang1033\par
+\f2\lang1049\'d0\'e5\'f4\'e0\'ea\'f2\'ee\'f0\'e8\'ed\'e3\f1\lang1033  \par
+generators.py\par
+ \f4\emdash\f1  \f2\lang1049\'e2\'fb\'e4\'e5\'eb\'e8\'f2\'fc\f1\lang1033  \f2\lang1049\'ee\'e1\'f9\'f3\'fe\f1\lang1033  \f2\lang1049\'eb\'ee\'e3\'e8\'ea\'f3\f1\lang1033\par
+\f2\lang1049\'c5\'e4\'e8\'ed\'fb\'e9\f1\lang1033  \f2\lang1049\'f4\'ee\'f0\'ec\'e0\'f2\f1\lang1033  \f2\lang1049\'e4\'e0\'f2\'fb\f1\lang1033  \f2\lang1049\'e2\f1\lang1033  \f2\lang1049\'e8\'f1\'f2\'ee\'f0\'e8\'e8\f1\lang1033\par
+\f2\lang1049\'cd\'e8\'e7\'ea\'e8\'e9\f1\lang1033  \f2\lang1049\'ef\'f0\'e8\'ee\'f0\'e8\'f2\'e5\'f2\f1\lang1033 :\par
+\f2\lang1049\'d0\'e0\'e7\'e1\'e8\'f2\'fc\f1\lang1033  gui.py \f2\lang1049\'ed\'e0\f1\lang1033  \f2\lang1049\'ec\'ee\'e4\'f3\'eb\'e8\f1\lang1033  (\f2\lang1049\'ec\'ee\'e6\'ed\'ee\f1\lang1033  \f2\lang1049\'ef\'ee\'e7\'e6\'e5\f1\lang1033 )\par
+\f2\lang1049\'d3\f6\'cd\'b3\'d2\'bb\f2\'ed\'e8\'f2\'fc\f1\lang1033  \f2\lang1049\'e2\'e8\'e4\'e6\'e5\'f2\'fb\f1\lang1033  (CTk \f2\lang1049\'e8\'eb\'e8\f1\lang1033  tk, \f2\lang1049\'ed\'e5\f1\lang1033  \f2\lang1049\'f1\'ec\'e5\'f8\'e8\'e2\'e0\'f2\'fc\f1\lang1033 )\par
+\f2\lang1049\'d5\'ee\'f2\'e8\'f2\'e5\f1\lang1033 , \f2\lang1049\'f7\'f2\'ee\'e1\'fb\f1\lang1033  \f2\lang1049\'ff\f1\lang1033  \f2\lang1049\'e8\'f1\'ef\'f0\'e0\'e2\'e8\'eb\f1\lang1033  \f2\lang1049\'ea\'f0\'e8\'f2\'e8\'f7\'e5\'f1\'ea\'e8\'e5\f1\lang1033  \f2\lang1049\'ef\'f0\'ee\'e1\'eb\'e5\'ec\'fb\f1\lang1033  (\f2\lang1049\'ef\'f3\'ed\'ea\'f2\'fb\f1\lang1033  1-3)?\f2\lang1049\par
+}
+ 
